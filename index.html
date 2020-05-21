@@ -13,7 +13,18 @@
     <input type="radio" name="radio" id="radio4">
     <input type="radio" name="radio" id="radio5">
     <div id="main_container">
-        <div id="shadow_back"></div>
+        <div id="shadow_back">
+            <div id="homebtn_wrapper" type="button" onclick="radioDeselection()">
+                <div id="logo_wrapper">
+                    <div class="back_logo"></div>
+                    <div class="back_logo"></div>
+                    <div class="back_logo"></div>
+                </div>
+                <p>HOME</p>
+            </div>
+        </div>
+
+        <!-- START ABOUT -->
         <div id="menu1" class="main_menu odd">
             <div id="menu_item1" class="menu_inner">
                 <label for="radio1">
@@ -21,6 +32,9 @@
                 </label>
             </div>
         </div>
+        <!-- END ABOUT -->
+
+        <!-- START SKILL -->
         <div id="menu2" class="main_menu even">
             <div id="menu_item2" class="menu_inner">
                 <label for="radio2">
@@ -28,6 +42,89 @@
                 </label>
             </div>
         </div>
+        <div id="skill_content">
+            <div class="my_skill">
+                <div class="skill_wrapper">
+                    <div class="skill_description">
+                        <p>HTML</p>
+                    </div>
+                    <div class="sikll_bar_wrappper">
+                        <div class="skill_bar">
+                            <div id="html" class="skill_bar_inner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <div class="skill_description">
+                        <p>CSS</p>
+                    </div>
+                    <div class="sikll_bar_wrappper">
+                        <div class="skill_bar">
+                            <div id="css" class="skill_bar_inner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my_skill">
+                <div class="skill_wrapper">
+                    <div class="skill_description">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="sikll_bar_wrappper">
+                        <div class="skill_bar">
+                            <div id="javascript" class="skill_bar_inner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <div class="skill_description">
+                        <p>PHP</p>
+                    </div>
+                    <div class="sikll_bar_wrappper">
+                        <div class="skill_bar">
+                            <div id="php" class="skill_bar_inner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my_skill">
+                <div class="skill_wrapper">
+                    <div class="skill_description">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="sikll_bar_wrappper">
+                        <div class="skill_bar">
+                            <div id="bootstrap" class="skill_bar_inner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill_wrapper">
+                    <div class="skill_description">
+                        <p>WordPress</p>
+                    </div>
+                    <div class="sikll_bar_wrappper">
+                        <div class="skill_bar">
+                            <div id="wordpress" class="skill_bar_inner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SKILL -->
+
+        <!-- START WORK -->
         <div id="menu3" class="main_menu odd">
             <div id="menu_item3" class="menu_inner">
                 <label for="radio3">
@@ -35,6 +132,9 @@
                 </label>
             </div>
         </div>
+        <!-- END WORK -->
+
+        <!-- STRAT PROTFOLIO -->
         <div id="menu4" class="main_menu even">
             <div id="menu_item4" class="menu_inner">
                 <label for="radio4">
@@ -42,6 +142,9 @@
                 </label>
             </div>
         </div>
+        <!-- END PROTFOLIO -->
+
+        <!--START CONTACT -->
         <div id="menu5" class="main_menu odd">
             <div id="menu_item5" class="menu_inner">
                 <label for="radio5">
@@ -49,6 +152,15 @@
                 </label>
             </div>
         </div>
+        <div id="contact_content">
+            <div id="contact_wrapper">
+                <form action="post">
+                    <p>名前</p>
+                    <input type="text" name="first_name" value="name" size="30" class="contact_input">
+                </form>
+            </div>
+        </div>
+        <!--END CONTACT -->
         <div id="menu_bar">
             <div id="about" class="bar">
                 <label for="radio1">
@@ -86,10 +198,10 @@
                 <span class="r">R</span>
                 <span class="i">I</span>
                 <span class="z">S</span>
-                <span class="e">E</span>
-                
+                <span class="e">E</span>               
             </h1>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

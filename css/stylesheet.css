@@ -35,18 +35,23 @@ input[type="radio"]:checked~#main_container #shadow_back {
     height: 100%;
     transition: 1s;
 }
+
 #menu1 {
     left: 0;
 }
+
 #menu2 {
     left: 20%;
 }
+
 #menu3 {
     left: 40%;
 }
+
 #menu4 {
     left: 60%;
 }
+
 #menu5 {
     left: 80%;
 }
@@ -70,47 +75,43 @@ input[type="radio"]:checked~#main_container #shadow_back {
     z-index: 10;
 }
 
-#menu_item1::before{
+#menu_item1::before {
     background-image: url(../img/asaf-r-UalImdHGjGU-unsplash.jpeg);
 }
-#menu_item2::before{
+
+#menu_item2::before {
     background-image: url(../img/agefis-eqvAIznVqR4-unsplash.jpeg);
 }
-#menu_item3::before{
+
+#menu_item3::before {
     background-image: url(../img/jakob-owens-c0EXwNQhvSo-unsplash.jpeg);
 }
-#menu_item4::before{
+
+#menu_item4::before {
     background-image: url(../img/dylan-gillis-KdeqA3aTnBY-unsplash.jpeg);
 }
-#menu_item5::before{
+
+#menu_item5::before {
     background-image: url(../img/491F3E7A-8373-4514-833E-B4A2D6A2316E_1_105_c\ 2.jpeg);
 }
 
-#radio1[type="radio"]:checked~#main_container #menu1 #menu_item1::before,
-#radio2[type="radio"]:checked~#main_container #menu2 #menu_item2::before,
-#radio3[type="radio"]:checked~#main_container #menu3 #menu_item3::before,
-#radio4[type="radio"]:checked~#main_container #menu4 #menu_item4::before,
-#radio5[type="radio"]:checked~#main_container #menu5 #menu_item5::before
-{
+#radio1[type="radio"]:checked~#main_container #menu1 #menu_item1::before, #radio2[type="radio"]:checked~#main_container #menu2 #menu_item2::before, #radio3[type="radio"]:checked~#main_container #menu3 #menu_item3::before, #radio4[type="radio"]:checked~#main_container #menu4 #menu_item4::before, #radio5[type="radio"]:checked~#main_container #menu5 #menu_item5::before {
     width: 100vw;
     transition: 1s;
     transition-delay: 1.5s;
-    z-index: 100;  
+    z-index: 100;
 }
 
-#radio1[type="radio"]:checked~#main_container #menu1 ,
-#radio2[type="radio"]:checked~#main_container #menu2 ,
-#radio4[type="radio"]:checked~#main_container #menu4 ,
-#radio5[type="radio"]:checked~#main_container #menu5 
-{
+#radio1[type="radio"]:checked~#main_container #menu1, #radio2[type="radio"]:checked~#main_container #menu2, #radio4[type="radio"]:checked~#main_container #menu4, #radio5[type="radio"]:checked~#main_container #menu5 {
     left: 40%;
     transition: 1s;
     transition-delay: 1.5s;
     z-index: 11;
 }
 
-input[type="radio"]:checked~ #main_container label h1{
-    display: none;
+input[type="radio"]:checked~#main_container label h1 {
+    opacity: 0;
+    z-index: -1;
 }
 
 label h1 {
@@ -170,16 +171,11 @@ input[type="radio"]:checked~#main_container #menu_bar {
 }
 
 .bar:hover {
-    background-color: rgba(0,200,200,.3);
+    background-color: rgba(0, 200, 200, .3);
     transition: .3s;
 }
 
-#radio1:checked ~ #main_container #menu_bar #about,
-#radio2:checked ~ #main_container #menu_bar #skill,
-#radio3:checked ~ #main_container #menu_bar #work,
-#radio4:checked ~ #main_container #menu_bar #portfolio,
-#radio5:checked ~ #main_container #menu_bar #contact
-{
+#radio1:checked~#main_container #menu_bar #about, #radio2:checked~#main_container #menu_bar #skill, #radio3:checked~#main_container #menu_bar #work, #radio4:checked~#main_container #menu_bar #portfolio, #radio5:checked~#main_container #menu_bar #contact {
     background: linear-gradient(rgba(255, 154, 59, 0.7), rgba(255, 82, 3, 0.7));
     color: #000;
     text-shadow: 1px 1px 1px #ccc;
@@ -189,7 +185,9 @@ input[type="radio"]:checked~#main_container #title_wrapper {
     bottom: -100%;
     transition: 1s;
 }
+
 /* START SlideAnimation */
+
 .odd {
     animation: slide_down 1s linear 0s 1;
 }
@@ -229,6 +227,8 @@ input[type="radio"]:checked~#main_container #title_wrapper {
     transform: translateX(-50%);
     overflow: hidden;
     z-index: 100;
+    transition: 1s;
+    transition-delay: 1s;
 }
 
 #sun {
@@ -246,7 +246,7 @@ input[type="radio"]:checked~#main_container #title_wrapper {
 }
 
 #ground {
-    background: linear-gradient(0deg, #333 90%, #222 95%, rgb(255, 94, 0));
+    background: linear-gradient(0deg, #333 90%, rgb(3, 36, 66) 95%, rgb(255, 94, 0));
     width: 100%;
     height: 30%;
     border-radius: 50%;
@@ -281,7 +281,7 @@ span {
 }
 
 .s {
-    transform: rotate(-30deg) translateY(27%);
+    transform: rotate(-30deg) translateY(25%);
 }
 
 .u {
@@ -289,7 +289,7 @@ span {
 }
 
 .n {
-    transform: rotate(-10deg) translateY(-16%);
+    transform: rotate(-10deg) translateY(-17%);
 }
 
 .r {
@@ -297,7 +297,7 @@ span {
 }
 
 .i {
-    transform: rotate(10deg) translateY(-18%);
+    transform: rotate(10deg) translateY(-19%);
 }
 
 .z {
@@ -305,7 +305,7 @@ span {
 }
 
 .e {
-    transform: rotate(30deg) translateY(30%);
+    transform: rotate(30deg) translateY(29%);
 }
 
 @keyframes sunrise {
@@ -334,4 +334,200 @@ span {
         opacity: 1;
     }
 }
+
 /*END MainLogo */
+
+#homebtn_wrapper {
+    position: relative;
+    top: 5vw;
+    left: 1vw;
+    cursor: pointer;
+    transform: translateX(-100%);
+}
+
+input[type="radio"]:checked~#main_container #shadow_back #homebtn_wrapper {
+    transform: translateX(0);
+    transition: 1s;
+    transition-delay: 2s;
+}
+
+#homebtn_wrapper p {
+    position: absolute;
+    top: 2vw;
+    left: 0.5vw;
+}
+
+#logo_wrapper {
+    animation: indicator 1s ease-in-out 0s infinite;
+}
+
+.back_logo {
+    position: absolute;
+    height: 1.5vw;
+    width: 1.5vw;
+    border: 5px solid;
+    border-color: transparent transparent #000 #000;
+    transform: rotate(45deg);
+    display: block;
+}
+
+.back_logo:nth-child(2) {
+    left: 1vw;
+}
+
+.back_logo:nth-child(3) {
+    left: 2vw;
+}
+
+@keyframes indicator {
+    0% {
+        transform: translateX(1vw);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(1vw);
+    }
+}
+
+/*START Skill Content */
+
+#skill_content {
+    position: absolute;
+    opacity: 0;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90vw;
+    height: 90vh;
+}
+
+#radio2[type="radio"]:checked~#main_container #skill_content {
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 3s;
+    z-index: 1000;
+}
+
+.my_skill {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    margin: 1vw 0;
+}
+
+.skill_wrapper {
+    display: flex;
+    width: 40%;
+    justify-content: space-around
+}
+
+.skill_description {
+    width: 40%;
+}
+
+.skill_description h1 {
+    line-height: 100%;
+}
+
+.skill_description p {
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.sikll_bar_wrappper {
+    width: 60%;
+    height: 2vw;
+    border: 3px solid #fff;
+    box-shadow: 2px 2px 2px #000;
+    border-radius: 30px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#radio2[type="radio"]:checked~#main_container #skill_content .sikll_bar_wrappper {
+    transform: translateX(0);
+    transition: 1s;
+    transition-delay: 6s;
+    opacity: 1;
+}
+
+.skill_bar {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s;
+    transition-delay: 6s;
+}
+
+.skill_bar_inner {
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(105, 196, 105), rgb(247, 178, 30), rgb(255, 81, 0));
+    transform: translateX(-100%);
+}
+
+#radio2[type="radio"]:checked~#main_container #skill_content .sikll_bar_wrappper .skill_bar .skill_bar_inner {
+    transform: translateX(0);
+    transition: 1s;
+    transition-delay: 8s;
+}
+
+#html {
+    width: 50%;
+}
+
+#css {
+    width: 60%;
+}
+
+#javascript {
+    width: 30%;
+}
+
+#php {
+    width: 10%;
+}
+
+#bootstrap {
+    width: 30%;
+}
+
+#wordpress {
+    width: 20%;
+}
+/*END Skill Content */
+
+/* START Contact Content */
+#contact_content {
+    position: absolute;
+    opacity: 0;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90vw;
+    height: 90vh;
+}
+
+#radio5[type="radio"]:checked~#main_container #contact_content {
+    opacity: 1;
+    transition: 2s;
+    transition-delay: 3s;
+    z-index: 1000;
+}
+
+#contact_wrapper {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* END Contact Content */
